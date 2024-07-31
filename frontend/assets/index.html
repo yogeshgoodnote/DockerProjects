@@ -1,0 +1,41 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Fees Management System</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fees Management System</h1>
+            <nav>
+                <button id="view-students">Students</button>
+                <button id="view-fees">Fees</button>
+            </nav>
+        </header>
+        <main>
+            <section id="students-section" class="hidden">
+                <h2>Students</h2>
+                <form id="student-form">
+                    <input type="text" id="student-name" placeholder="Student Name" required>
+                    <button type="submit">Add Student</button>
+                </form>
+                <ul id="students-list"></ul>
+            </section>
+            <section id="fees-section">
+                <h2>Fees</h2>
+                <form id="fee-form">
+                    <select id="student-select"></select>
+                    <input type="number" id="amount" placeholder="Amount" required>
+                    <button type="submit">Add Fee</button>
+                </form>
+                <ul id="fees-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
